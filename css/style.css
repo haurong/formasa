@@ -1,0 +1,2378 @@
+/*globel*/
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+/*grid*/
+.container{
+	/*width: 1170px;*/
+	margin: 0 auto;
+	padding: 0 24px;
+}
+.row{
+	margin-right: -8px;
+	margin-left: -8px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+.col-xs-12 {
+  width: 100%;
+}
+.col-xs-11 {
+  width: 91.66666667%;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+}
+.col-xs-7 {
+  width: 58.33333333%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-5 {
+  width: 41.66666667%;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+}
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+.col-xs-1 {
+  width: 8.33333333%;
+}
+.col-xs-pull-12 {
+  right: 100%;
+}
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+.col-xs-pull-9 {
+  right: 75%;
+}
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+.col-xs-pull-6 {
+  right: 50%;
+}
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+.col-xs-pull-3 {
+  right: 25%;
+}
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+.col-xs-pull-0 {
+  right: auto;
+}
+.col-xs-push-12 {
+  left: 100%;
+}
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+.col-xs-push-9 {
+  left: 75%;
+}
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+.col-xs-push-6 {
+  left: 50%;
+}
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+.col-xs-push-3 {
+  left: 25%;
+}
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+.col-xs-push-0 {
+  left: auto;
+}
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-sm-pull-0 {
+    right: auto;
+  }
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .col-sm-push-0 {
+    left: auto;
+  }
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-md-pull-0 {
+    right: auto;
+  }
+  .col-md-push-12 {
+    left: 100%;
+  }
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .col-md-push-9 {
+    left: 75%;
+  }
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .col-md-push-6 {
+    left: 50%;
+  }
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .col-md-push-3 {
+    left: 25%;
+  }
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .col-md-push-0 {
+    left: auto;
+  }
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .col-lg-push-0 {
+    left: auto;
+  }
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+.row:afer{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.col-1-3,.col-1-2,.col-2-3,.col-1-4,.col-5-6,.col-1-6{
+	float: left;
+	padding: 0 8px;
+}
+.col-1-3{
+	width: 33.33333%
+}
+.col-2-3{
+	width: 66.66667%;
+}
+.col-1-2{
+	width: 50%;
+}
+.col-5-6{
+	width: 83.33333%;
+}
+.col-1-6{
+	width: 16.66667%;
+}
+/*Utility*/
+.u-block{
+	display: block;
+}
+.u-cf:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.givePadding{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+body{
+  background-color: #f9f6f4;
+}
+/*component*/
+/*--------------------navbar--------------------*/
+.navbar{
+	background-color: #fff;
+	box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.1);
+/*  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:10;*/
+}
+.navbar li a{
+	color: #ccc;
+  font-weight:300;
+}
+/*--------------------banner--------------------*/
+.banner-img{
+    max-width: 100%;
+    background: url(../images/banner2.jpg) no-repeat center center;
+    background-size:cover;
+}
+/*--------------------abouts--------------------*/
+.abouts{
+  background: linear-gradient(rgba(255,255,255, 0.8),rgba(255,255,255, 0.8)), url(../images/abouts.jpg) no-repeat 0% 20%/ cover;
+  max-width: 100%;
+  height: 280px;
+}
+.Delicious-menu{
+  background: linear-gradient(rgba(255,255,255, 0.8),rgba(255,255,255, 0.8)), url(../images/menu.jpg) no-repeat 0% 20%/ cover;
+  max-width: 100%;
+  height: 280px;
+}
+.googleMap{
+  height: 400px;
+}
+/*--------------------footer--------------------*/
+footer{
+  height: 300px;
+  background-color: #413b36;
+}
+.padding{
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.padding-footer{
+  padding:50px 50px 50px 50px;
+}
+footer .logo-footer{
+  height: 121px;
+  width: 132px;
+}
+footer .menu-footer{
+  float: right;
+}
+footer .menu-footer>li{
+  float: left;
+}
+footer .menu-footer>li >a{
+  display: block;
+  color: #f9f6f4;
+  padding: 24px 28px;
+}
+.block-footer{
+  background-color: #f9f6f4;
+  height: 2px;
+  width: 850px;
+  position: absolute;
+  top: 118px;
+  right: 50px;
+}
+.copyright{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.copyright p{
+  padding-right: 24px;
+  color: #f9f6f4;
+}
+@media (min-width: 1200px){
+/*--------------------navbar--------------------*/
+.menu-button,.menu-button-checkbox {
+  display: none;  
+ }
+.navbar .logo{
+  float: left;
+  padding: 16px;
+}
+.navbar .menu-button-icon{
+  display: none;
+}
+.menu{
+  float: right;
+}
+
+.menu > li{
+  float: left;
+}
+.menu > li > a{
+  display: block;
+  line-height: 24px;
+  padding: 32px 16px;
+}
+.menu > li > a:after{
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  top: 65%;
+  left: 50%;
+  background-color: #c5dc4d;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+.menu > li:hover > a:after{
+  width: 75%;
+}
+.menu > li > a:hover{
+  color: #54341a;
+  font-weight:500;
+}
+/*--------------------banner--------------------*/
+.banner-img{
+    width: auto;
+    min-height:600px;
+}
+/*--------------------slogan--------------------*/
+.text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  text-align: center;
+  color: #54341a;
+  line-height: 72px;
+  margin:0; 
+  padding-top: 72px;
+}
+.text p {
+  font-size: 32px;
+  text-align: center;
+  color: #54341a;
+  line-height: 40px;
+  margin:0; 
+}
+.line {
+  display: block;
+  position: relative;
+  background-color: #c5dc4d;
+  width: 100px;
+  height: 6px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*--------------------abouts--------------------*/
+.abouts-introduction .givePadding{
+  padding-top: 0;
+}
+.abouts-introduction .Delicious{
+  padding-top: 24px;
+  height:500px;
+}
+.abouts-introduction .Delicious-img{
+  width: 672px;
+  height: 456px;
+  box-shadow: 0 2px 16px 0 rgba(45, 31, 21, 0.2);
+  background: url(../images/abouts_01.jpg) center;
+  z-index:1;
+}
+.abouts-introduction .Delicious .block{
+  position: absolute;
+  top: 0;
+  left: 24px;
+  width: 672px;
+  height: 456px;
+  border: solid 6px #c5dc4d;
+  z-index:2;
+}
+.abouts-introduction .Delicious .Delicious-text{
+  margin:48px;
+}
+.abouts-introduction .Delicious .Delicious-text h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: #c5dc4d;
+  border-left: 30px solid #c5dc4d;
+  line-height: 58px;
+}
+.abouts-introduction .Delicious .Delicious-text h2{
+  font-size: 40px;
+  color: #54341a;
+  font-weight: 500;
+  margin:0; 
+}
+.abouts-introduction .Delicious .Delicious-text p{
+  font-size: 20px;
+  color: #958476;
+  line-height:28px;
+  font-weight: 300;
+}
+.abouts-introduction .Fresh{
+  height:600px;
+  padding-top: 50px;
+}
+.abouts-introduction .Fresh-img{
+  float: right;
+  width: 672px;
+  height: 456px;
+  box-shadow: 0 2px 16px 0 rgba(45, 31, 21, 0.2);
+  background: url(../images/abouts_02.jpg);
+  z-index:2;
+}
+.abouts-introduction .Fresh .block{
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  width: 672px;
+  height: 456px;
+  border: solid 6px #c5dc4d;
+  z-index:1;
+}
+.abouts-introduction .Fresh .Fresh-text{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.abouts-introduction .Fresh .Fresh-text h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: #c5dc4d;
+  border-left: 30px solid #c5dc4d;
+  line-height: 58px;
+}
+.abouts-introduction .Fresh .Fresh-text h2{
+  font-size: 40px;
+  color: #54341a;
+  font-weight: 500;
+  margin:0; 
+}
+.abouts-introduction .Fresh .Fresh-text p{
+  font-size: 20px;
+  color: #958476;
+  line-height:28px;
+  font-weight: 300;
+}
+/*--------------------menu--------------------*/
+.Pasta{
+  height: 100px;
+}
+.Pasta h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: #c5dc4d;
+  border-left: 30px solid #c5dc4d;
+  line-height: 58px;
+  margin:0;
+}
+.Pasta h3{
+  font-size: 32px;
+  color: #54341a;
+  font-weight: 500;
+  line-height:56px;
+  margin:0; 
+}
+.Pasta .combo p{
+  font-size: 20px;
+  color: #958476;
+  line-height:28px;
+  font-weight: 400;
+  margin:0; 
+}
+/*--------------------menu-content--------------------*/
+
+.Pasta-Cream-Sauce-contect {
+  margin:16px;
+}
+.Pasta-Cream-Sauce-block-bgc{
+  width: 300px;
+  height: 32px;
+  position: relative;
+  top: 13px;
+  left: 16px;
+  background-color: #f9f6f4;
+  z-index:2;
+}
+.Pasta-Cream-Sauce-sort h2{
+  position: absolute;
+  top: -14px;
+  left: 26px;
+  background-color: #f9f6f4;
+  font-size: 32px;
+  color: #c5dc4d;
+  border-left: 24px solid #c5dc4d;
+  line-height: 36px;
+  z-index:3;
+}
+.Pasta-Cream-Sauce-block{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border: solid 6px #c5dc4d;
+  z-index:1;
+}
+.Pasta-Cream-Sauce-content{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Pasta-Cream-Sauce-text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Pasta-Cream-Sauce-content h3{
+  font-size: 24px;
+  color: #54341a;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.Pasta-Cream-Sauce-content p {
+  font-size: 20px;
+  color: #958476;
+  line-height:28px;
+  font-weight: 300;
+  margin: 0;
+}
+.Pasta-Cream-Sauce-text-icon{
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.icon{
+  float: left;
+  width: 36px;
+  height: 30px;
+}
+.icon img{
+  width: 36px;
+  height: 30px;
+}
+.Pasta-Cream-Sauce-content .Pasta-Cream-Sauce-text-icon p{
+  font-size: 18px;
+}
+/*--------------------shop--------------------*/
+.formosa-text h1{
+  font-size: 84px;
+  color: #c5dc4d;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  line-height: 66px;
+}
+.formosa-block{
+  background-color: #c5dc4d;
+  height: 450px;
+  width:100%;
+  padding: 20px;
+}
+.formosa-line{
+  border: 4px solid #fff;
+  height: 410px;
+  width:100%;
+  padding: 10px 50px 10px 50px;
+  color: #fff;
+}
+.formosa-content h2{
+  color: #f9f6f4;
+  font-weight: 500;
+  font-size: 24px;
+}
+.formosa-content p{
+  color: #f9f6f4;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+}
+@media (min-width: 992px) and  (max-width: 1199px){
+.givePadding{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/*--------------------navbar--------------------*/
+.menu-button,.menu-button-checkbox {
+    display: none;  
+ }
+.navbar .logo{
+  float: left;
+  padding: 16px;
+}
+.navbar .menu-button-icon{
+  display: none;
+}
+.menu{
+  float: right;
+}
+
+.menu > li{
+  float: left;
+}
+.menu > li > a{
+  display: block;
+  line-height: 24px;
+  padding: 32px 16px;
+}
+.menu > li > a:after{
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  top: 65%;
+  left: 50%;
+  background-color: #c5dc4d;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+.menu > li:hover > a:after{
+  width: 75%;
+}
+.menu > li > a:hover{
+  color: #54341a;
+  font-weight:500;
+}
+/*--------------------banner--------------------*/
+.banner-img{
+    width: auto;
+    min-height:600px;
+}
+/*--------------------slogan--------------------*/
+.text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  text-align: center;
+  color: #54341a;
+  line-height: 72px;
+  margin:0; 
+  padding-top: 72px;
+}
+.text p {
+  font-size: 32px;
+  text-align: center;
+  color: #54341a;
+  line-height: 40px;
+  margin:0; 
+}
+.line {
+  display: block;
+  position: relative;
+  background-color: #c5dc4d;
+  width: 100px;
+  height: 6px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*--------------------abouts--------------------*/
+.abouts-introduction .givePadding{
+  padding-top: 0;
+}
+.abouts-introduction .Delicious{
+  padding-top: 24px;
+  height:750px;
+}
+.abouts-introduction .Delicious-img{
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 672px;
+  height: 456px;
+  box-shadow: 0 2px 16px 0 rgba(45, 31, 21, 0.2);
+  background: url(../images/abouts_01.jpg) center;
+  z-index:1;
+}
+.abouts-introduction .Delicious .block{
+  position: absolute;
+  top: 0;
+  left: 13%;
+  width: 672px;
+  height: 456px;
+  border: solid 6px #c5dc4d;
+  z-index:2;
+}
+.abouts-introduction .Delicious .Delicious-text{
+  padding-left: 16%;
+}
+.abouts-introduction .Delicious .Delicious-text h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #c5dc4d;
+  border-left: 28px solid #c5dc4d;
+  line-height: 52px;
+}
+.abouts-introduction .Delicious .Delicious-text h2{
+  font-size: 32px;
+  color: #54341a;
+  font-weight: 500;
+  margin:0; 
+}
+.abouts-introduction .Delicious .Delicious-text p{
+  font-size: 22px;
+  color: #958476;
+  line-height:30px;
+  font-weight: 300;
+}
+.abouts-introduction .Fresh{
+  height:800px;
+  padding-top: 50px;
+}
+.abouts-introduction .Fresh-img{
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 672px;
+  height: 456px;
+  box-shadow: 0 2px 16px 0 rgba(45, 31, 21, 0.2);
+  background: url(../images/abouts_02.jpg);
+  z-index:2;
+}
+.abouts-introduction .Fresh .block{
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  width: 672px;
+  height: 456px;
+  border: solid 6px #c5dc4d;
+  z-index:1;
+}
+.abouts-introduction .Fresh .Fresh-text{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 16%;
+}
+.abouts-introduction .Fresh .Fresh-text h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #c5dc4d;
+  border-left: 28px solid #c5dc4d;
+  line-height: 52px;
+}
+.abouts-introduction .Fresh .Fresh-text h2{
+  font-size: 32px;
+  color: #54341a;
+  font-weight: 500;
+  margin:0; 
+}
+.abouts-introduction .Fresh .Fresh-text p{
+  font-size: 22px;
+  color: #958476;
+  line-height:30px;
+  font-weight: 300;
+}
+/*--------------------menu--------------------*/
+.Pasta{
+  height: 180px;
+}
+.Pasta h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: #c5dc4d;
+  border-left: 30px solid #c5dc4d;
+  line-height: 58px;
+  margin:0;
+}
+.Pasta h3{
+  font-size: 32px;
+  color: #54341a;
+  font-weight: 500;
+  line-height:56px;
+  margin:0; 
+}
+.Pasta .combo p{
+  font-size: 20px;
+  color: #958476;
+  line-height:28px;
+  font-weight: 400;
+  margin:0; 
+}
+/*--------------------menu-content--------------------*/
+
+.Pasta-Cream-Sauce-contect {
+  margin:16px;
+}
+.Pasta-Cream-Sauce-block-bgc{
+  width: 300px;
+  height: 32px;
+  position: relative;
+  top: 13px;
+  left: 16px;
+  background-color: #f9f6f4;
+  z-index:2;
+}
+.Pasta-Cream-Sauce-sort h2{
+  position: absolute;
+  top: -14px;
+  left: 26px;
+  background-color: #f9f6f4;
+  font-size: 32px;
+  color: #c5dc4d;
+  border-left: 24px solid #c5dc4d;
+  line-height: 36px;
+  z-index:3;
+}
+.Pasta-Cream-Sauce-block{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border: solid 6px #c5dc4d;
+  z-index:1;
+}
+.Pasta-Cream-Sauce-content{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Pasta-Cream-Sauce-text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Pasta-Cream-Sauce-content h3{
+  font-size: 24px;
+  color: #54341a;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.Pasta-Cream-Sauce-content p {
+  font-size: 20px;
+  color: #958476;
+  line-height:28px;
+  font-weight: 300;
+  margin: 0;
+}
+.Pasta-Cream-Sauce-text-icon{
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.icon{
+  float: left;
+  width: 36px;
+  height: 30px;
+}
+.icon img{
+  width: 36px;
+  height: 30px;
+}
+/*--------------------shop--------------------*/
+.shop-content{
+  padding: 15px;
+}
+.formosa-text h1{
+  font-size: 84px;
+  color: #c5dc4d;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  line-height: 66px;
+}
+.formosa-block{
+  background-color: #c5dc4d;
+  height: 480px;
+  width:100%;
+  padding: 20px;
+}
+.formosa-line{
+  border: 4px solid #fff;
+  height: 440px;
+  width:100%;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+}
+.formosa-content h2{
+  color: #f9f6f4;
+  font-weight: 500;
+  font-size: 24px;
+}
+.formosa-content p{
+  color: #f9f6f4;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*--------------------footer--------------------*/
+.block-footer{
+  width: 680px;
+}
+}
+@media (max-width: 991px){
+.givePadding{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+/*--------------------navbar--------------------*/
+	 .navbar .logo{
+	 float: left;
+	 margin-top: 16px;
+	 margin-bottom: 16px;
+}
+	.menu-button{
+		background-color: #fff;
+		border-radius: 4px;
+		border: 2px solid #c5dc4d;
+		height: 40px;
+		width: 40px;
+		float: right;
+		margin-top: 22px;
+		margin-bottom: 22px;
+	}
+	.navbar .menu-button-icon{
+		padding-top: 9px;
+		padding-bottom: 7px;
+	}
+	.navbar .menu-button .icon-bar{
+	 display: block;
+	 background-color: #c5dc4d;
+	 height: 2px;
+	 width: 24px;
+	 margin-bottom: 5px;
+	}
+	.menu-button-checkbox {  
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    margin-top: 22px;
+	  margin-bottom: 22px;
+    opacity: 0;
+  	}
+  	.menu-button-checkbox:checked ~ .menu {
+    display: block;
+  	}
+.menu{
+	  display: none;
+	  margin-top: 0;
+    padding-left: 0;
+    position: fixed;
+    right: 0;
+    top: 88px;
+    width: 100%;
+    height: 123px;
+    background-color: #c5dc4d;
+}
+.menu li {
+    border-bottom: 1px solid #E3EEAA;
+    border-radius: 0;
+    padding-left: 8%;
+ }
+.menu > li > a{
+	display: block;
+	line-height: 24px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: #fff;
+}
+/*--------------------banner--------------------*/
+.banner{
+  padding-bottom: 40px;
+}
+.banner-img{
+    width: auto;
+    min-height:350px;
+}
+/*--------------------slogan--------------------*/
+.abouts{
+  height: 200px;
+}
+.Delicious-menu{
+  height: 200px;
+}
+.text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  text-align: center;
+  color: #54341a;
+  line-height: 56px;
+  margin:0; 
+  padding-top: 48px;
+}
+.text p {
+  font-size: 24px;
+  text-align: center;
+  color: #54341a;
+  line-height: 32px;
+  margin:0; 
+}
+.line {
+  display: block;
+  position: relative;
+  background-color: #c5dc4d;
+  width: 80px;
+  height: 6px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*--------------------abouts--------------------*/
+.abouts-introduction .givePadding{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.abouts-introduction .Delicious{
+  padding-top: 24px;
+  height:700px;
+}
+.abouts-introduction .Delicious-img{
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 590px;
+  height: 400px;
+  box-shadow: 0 2px 16px 0 rgba(45, 31, 21, 0.2);
+  background: url(../images/abouts_01.jpg) center;
+  z-index:1;
+}
+.abouts-introduction .Delicious .block{
+  position: absolute;
+  top: 0;
+  left: 7%;
+  width: 590px;
+  height: 400px;
+  border: solid 6px #c5dc4d;
+  z-index:2;
+}
+.abouts-introduction .Delicious .Delicious-text{
+  padding-left: 11%;
+  padding-top: 20px;
+}
+.abouts-introduction .Delicious .Delicious-text h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #c5dc4d;
+  border-left: 24px solid #c5dc4d;
+  line-height: 40px;
+}
+.abouts-introduction .Delicious .Delicious-text h2{
+  font-size: 28px;
+  color: #54341a;
+  font-weight: 500;
+  margin:0; 
+}
+.abouts-introduction .Delicious .Delicious-text p{
+  font-size: 18px;
+  color: #958476;
+  line-height:24px;
+  font-weight: 300;
+}
+.abouts-introduction .Fresh{
+  height:700px;
+}
+.abouts-introduction .Fresh-img{
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 590px;
+  height: 400px;
+  box-shadow: 0 2px 16px 0 rgba(45, 31, 21, 0.2);
+  background: url(../images/abouts_02.jpg);
+  z-index:2;
+}
+.abouts-introduction .Fresh .block{
+  position: absolute;
+  top: 4%;
+  left: 14%;
+  width: 590px;
+  height: 400px;
+  border: solid 6px #c5dc4d;
+  z-index:1;
+}
+.abouts-introduction .Fresh .Fresh-text{
+  padding-top: 40px;
+  padding-left: 11%;
+}
+.abouts-introduction .Fresh .Fresh-text h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #c5dc4d;
+  border-left: 24px solid #c5dc4d;
+  line-height: 40px;
+}
+.abouts-introduction .Fresh .Fresh-text h2{
+  font-size: 28px;
+  color: #54341a;
+  font-weight: 500;
+  margin:0; 
+}
+.abouts-introduction .Fresh .Fresh-text p{
+  font-size: 18px;
+  color: #958476;
+  line-height:24px;
+  font-weight: 300;
+}
+/*--------------------menu--------------------*/
+.Pasta{
+  height: 180px;
+}
+.Pasta h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #c5dc4d;
+  border-left: 28px solid #c5dc4d;
+  line-height: 52px;
+  margin:0;
+}
+.Pasta h3{
+  font-size: 24px;
+  color: #54341a;
+  font-weight: 500;
+  line-height:40px;
+  margin:0; 
+}
+.Pasta .combo{
+  padding-top: 16px;
+}
+.Pasta .combo p{
+  color: #958476;
+  line-height:24px;
+  font-weight: 400;
+  margin:0; 
+}
+/*--------------------menu-content--------------------*/
+
+.Pasta-Cream-Sauce-contect {
+  margin:16px;
+}
+.Pasta-Cream-Sauce-block-bgc{
+  width: 260px;
+  height: 32px;
+  position: relative;
+  top: 13px;
+  left: 16px;
+  background-color: #f9f6f4;
+  z-index:2;
+}
+.Pasta-Cream-Sauce-sort h2{
+  position: absolute;
+  top: -8px;
+  left: 26px;
+  background-color: #f9f6f4;
+  font-size: 28px;
+  color: #c5dc4d;
+  border-left: 20px solid #c5dc4d;
+  line-height: 36px;
+  z-index:3;
+}
+.Pasta-Cream-Sauce-block{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border: solid 5px #c5dc4d;
+  z-index:1;
+}
+.Pasta-Cream-Sauce-content{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Pasta-Cream-Sauce-text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Pasta-Cream-Sauce-content h3{
+  font-size: 22px;
+  color: #54341a;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.Pasta-Cream-Sauce-content p {
+  font-size: 16px;
+  color: #958476;
+  line-height:24px;
+  font-weight: 300;
+  margin: 0;
+}
+.Pasta-Cream-Sauce-text-icon{
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.icon{
+  float: left;
+  width: 36px;
+  height: 30px;
+}
+.icon img{
+  width: 36px;
+  height: 30px;
+}
+/*--------------------shop--------------------*/
+.shop-content{
+  padding: 15px;
+}
+.formosa-text h1{
+  font-size: 84px;
+  color: #c5dc4d;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  line-height: 66px;
+}
+.formosa-block{
+  background-color: #c5dc4d;
+  height: 460px;
+  width:100%;
+  padding: 20px;
+}
+.formosa-line{
+  border: 4px solid #fff;
+  height: 420px;
+  width:100%;
+  padding: 20px 50px 20px 50px;
+  color: #fff;
+}
+.formosa-content h2{
+  color: #f9f6f4;
+  font-weight: 500;
+  font-size: 24px;
+}
+.formosa-content p{
+  color: #f9f6f4;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*--------------------footer--------------------*/
+.block-footer{
+  width: 450px;
+}
+}
+@media (min-width: 576px) and (max-width: 767px){
+.givePadding{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*--------------------banner--------------------*/
+.banner-img{
+  height: auto;
+  min-height:250px;
+}
+/*--------------------slogan--------------------*/
+.abouts{
+  padding:0px;
+  height: 160px;
+}
+.Delicious-menu{
+  padding:0px;
+  height: 160px;
+}
+.text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  text-align: center;
+  color: #54341a;
+  line-height: 40px;
+  margin:0; 
+  padding-top: 40px;
+}
+.text p {
+  font-size: 24px;
+  text-align: center;
+  color: #54341a;
+  line-height: 30px;
+  margin:0; 
+}
+.line {
+  display: block;
+  position: relative;
+  background-color: #c5dc4d;
+  width: 60px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*--------------------abouts--------------------*/
+.abouts-introduction .givePadding{
+  padding-top: 0;
+}
+.abouts-introduction .Delicious{
+  padding-top: 24px;
+  height:560px;
+}
+.abouts-introduction .Delicious-img{
+  width: 442px;
+  height: 300px;
+  box-shadow: 0 2px 16px 0 rgba(45, 31, 21, 0.2);
+  background: url(../images/abouts_01.jpg) center;
+  z-index:1;
+}
+.abouts-introduction .Delicious .block{
+  position: absolute;
+  top: 0;
+  left: 46%;
+  transform: translateX(-50%);
+  width: 442px;
+  height: 300px;
+  border: solid 6px #c5dc4d;
+  z-index:2;
+}
+.abouts-introduction .Delicious .Delicious-text{
+  position: absolute;
+  top: 320px;
+  left: 8%;
+}
+.abouts-introduction .Delicious .Delicious-text h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #c5dc4d;
+  border-left: 20px solid #c5dc4d;
+  line-height: 36px;
+}
+.abouts-introduction .Delicious .Delicious-text h2{
+  font-size: 28px;
+  color: #54341a;
+  font-weight: 500;
+  margin:0; 
+}
+.abouts-introduction .Delicious .Delicious-text p{
+  font-size: 16px;
+  color: #958476;
+  line-height:28px;
+  font-weight: 300;
+}
+.abouts-introduction .Fresh{
+  height:700px;
+  padding-top: 50px;
+}
+.abouts-introduction .Fresh-img{
+  width: 442px;
+  height: 300px;
+  box-shadow: 0 2px 16px 0 rgba(45, 31, 21, 0.2);
+  background: url(../images/abouts_02.jpg) center;
+  z-index:2;
+}
+.abouts-introduction .Fresh .block{
+  position: absolute;
+  top: 80px;
+  left: 18%;
+  width: 442px;
+  height: 300px;
+  border: solid 6px #c5dc4d;
+  z-index:1;
+}
+.abouts-introduction .Fresh .Fresh-text{
+  padding-top: 80px;
+  padding-bottom: 60px;
+  position: absolute;
+  top: 320px;
+  left: 8%;
+}
+.abouts-introduction .Fresh .Fresh-text h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #c5dc4d;
+  border-left: 20px solid #c5dc4d;
+  line-height: 36px;
+}
+.abouts-introduction .Fresh .Fresh-text h2{
+  font-size: 28px;
+  color: #54341a;
+  font-weight: 500;
+  margin:0; 
+}
+.abouts-introduction .Fresh .Fresh-text p{
+  font-size: 16px;
+  color: #958476;
+  line-height:28px;
+  font-weight: 300;
+}
+/*--------------------menu--------------------*/
+.Pasta{
+  height: 150px;
+}
+.Pasta h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #c5dc4d;
+  border-left: 28px solid #c5dc4d;
+  line-height: 40px;
+  margin:0;
+}
+.Pasta h3{
+  font-size: 24px;
+  color: #54341a;
+  font-weight: 500;
+  line-height:40px;
+  margin:0; 
+}
+.Pasta .combo{
+  padding-top: 10px;
+}
+.Pasta .combo p{
+  color: #958476;
+  line-height:24px;
+  font-weight: 400;
+  margin:0; 
+}
+/*--------------------menu-content--------------------*/
+.Pasta-Cream-Sauce {
+  padding:15px;
+}
+.Pasta-Cream-Sauce-contect {
+  margin:16px;
+}
+.Pasta-Cream-Sauce-block-bgc{
+  width: 300px;
+  height: 32px;
+  position: relative;
+  top: 13px;
+  left: 16px;
+  background-color: #f9f6f4;
+  z-index:2;
+}
+.Pasta-Cream-Sauce-sort h2{
+  position: absolute;
+  top: -14px;
+  left: 26px;
+  background-color: #f9f6f4;
+  font-weight: 400;
+  font-size: 32px;
+  color: #c5dc4d;
+  border-left: 24px solid #c5dc4d;
+  line-height: 36px;
+  z-index:3;
+}
+.Pasta-Cream-Sauce-block{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border: solid 6px #c5dc4d;
+  z-index:1;
+}
+.Pasta-Cream-Sauce-content{
+  position: relative;
+  top: 50%;
+  left: 40%;
+  transform: translateX(-30%);
+}
+.Pasta-Cream-Sauce-text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Pasta-Cream-Sauce-content h3{
+  font-size: 24px;
+  color: #54341a;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.Pasta-Cream-Sauce-content p {
+  font-size: 16px;
+  color: #958476;
+  line-height:28px;
+  font-weight: 300;
+  margin: 0;
+}
+.Pasta-Cream-Sauce-text-icon{
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.icon{
+  float: left;
+  width: 36px;
+  height: 30px;
+}
+.icon img{
+  width: 36px;
+  height: 30px;
+}
+/*--------------------shop--------------------*/
+.shop-content{
+  padding: 15px;
+}
+.formosa-text h1{
+  font-size: 84px;
+  color: #c5dc4d;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  line-height: 66px;
+}
+.formosa-block{
+  background-color: #c5dc4d;
+  height: 420px;
+  padding: 20px;
+}
+.formosa-line{
+  border: 4px solid #fff;
+  height: 380px;
+  width:100%;
+  padding: 10px 50px 10px 50px;
+  color: #fff;
+}
+.formosa-content h2{
+  color: #f9f6f4;
+  font-weight: 500;
+  font-size: 24px;
+}
+.formosa-content p{
+  color: #f9f6f4;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*--------------------footer--------------------*/
+.block-footer{
+  width: 300px;
+}
+footer .menu-footer>li >a{
+  padding: 24px 20px;
+}
+}
+@media (max-width: 575px){
+.givePadding{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/*--------------------banner--------------------*/
+  .banner-img{
+    height: auto;
+    min-height:200px;
+}
+/*--------------------slogan--------------------*/
+.abouts{
+  padding:0px;
+  height: 140px;
+}
+.Delicious-menu{
+  padding:0px;
+  height: 140px;
+}
+.text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: center;
+  color: #54341a;
+  line-height: 36px;
+  margin:0; 
+  padding-top: 32px;
+}
+.text p {
+  font-size: 20px;
+  text-align: center;
+  color: #54341a;
+  line-height: 28px;
+  margin:0; 
+}
+.line {
+  display: block;
+  position: relative;
+  background-color: #c5dc4d;
+  width: 60px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*--------------------abouts--------------------*/
+.abouts-introduction .givePadding{
+  padding-top: 0;
+}
+.abouts-introduction .Delicious{
+  padding-top: 24px;
+  height:450px;
+}
+.abouts-introduction .Delicious-img{
+  width: 296px;
+  height: 200px;
+  box-shadow: 0 2px 16px 0 rgba(45, 31, 21, 0.2);
+  background: url(../images/abouts_01.jpg) center;
+  background-size: 100%;
+  z-index:1;
+}
+.abouts-introduction .Delicious .block{
+  position: absolute;
+  top: 0;
+  left: 46%;
+  transform: translateX(-50%);
+  width: 296px;
+  height: 200px;
+  border: solid 4px #c5dc4d;
+  z-index:2;
+}
+.abouts-introduction .Delicious .Delicious-text{
+  position: absolute;
+  top: 200px;
+  left: 8%;
+}
+.abouts-introduction .Delicious .Delicious-text h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #c5dc4d;
+  border-left: 18px solid #c5dc4d;
+  line-height: 32px;
+}
+.abouts-introduction .Delicious .Delicious-text h2{
+  font-size: 24px;
+  color: #54341a;
+  font-weight: 500;
+  margin:0; 
+}
+.abouts-introduction .Delicious .Delicious-text p{
+  font-size: 14px;
+  color: #958476;
+  line-height:24px;
+  font-weight: 300;
+}
+.abouts-introduction .Fresh{
+  height:480px;
+  padding-top: 30px;
+}
+.abouts-introduction .Fresh-img{
+  width: 296px;
+  height: 200px;
+  box-shadow: 0 2px 16px 0 rgba(45, 31, 21, 0.2);
+  background: url(../images/abouts_02.jpg) center;
+  z-index:2;
+  background-size: 100%;
+}
+.abouts-introduction .Fresh .block{
+  position: absolute;
+  top: 50px;
+  transform: translateX(-50%);
+  left: 54%;
+  width: 296px;
+  height: 200px;
+  border: solid 4px #c5dc4d;
+  z-index:1;
+}
+.abouts-introduction .Fresh .Fresh-text{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: absolute;
+  top: 200px;
+  left: 8%;
+}
+.abouts-introduction .Fresh .Fresh-text h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #c5dc4d;
+  border-left: 18px solid #c5dc4d;
+  line-height: 32px;
+}
+.abouts-introduction .Fresh .Fresh-text h2{
+  font-size: 24px;
+  color: #54341a;
+  font-weight: 500;
+  margin:0; 
+}
+.abouts-introduction .Fresh .Fresh-text p{
+  font-size: 14px;
+  color: #958476;
+  line-height:24px;
+  font-weight: 300;
+}
+/*--------------------menu--------------------*/
+.Pasta{
+  height: 120px;
+}
+.Pasta h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #c5dc4d;
+  border-left: 18px solid #c5dc4d;
+  line-height: 32px;
+  margin:0;
+}
+.Pasta h3{
+  font-size: 20px;
+  color: #54341a;
+  font-weight: 500;
+  line-height:28px;
+  margin:0; 
+}
+.Pasta .combo{
+  padding-top: 10px;
+}
+.Pasta .combo p{
+  font-size: 14px;
+  color: #958476;
+  line-height:18px;
+  font-weight: 400;
+  margin:0; 
+}
+/*--------------------menu-content--------------------*/
+.Pasta-Cream-Sauce {
+  padding:15px;
+}
+
+.Pasta-Cream-Sauce-contect {
+  margin:16px;
+}
+.Pasta-Cream-Sauce-block-bgc{
+  width: 270px;
+  height: 32px;
+  position: relative;
+  top: 13px;
+  left: 16px;
+  background-color: #f9f6f4;
+  z-index:2;
+}
+.Pasta-Cream-Sauce-sort h2{
+  position: absolute;
+  top: -8px;
+  left: 26px;
+  font-weight: 400;
+  background-color: #f9f6f4;
+  font-size: 28px;
+  color: #c5dc4d;
+  border-left: 24px solid #c5dc4d;
+  line-height: 36px;
+  z-index:3;
+}
+.Pasta-Cream-Sauce-block{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border: solid 6px #c5dc4d;
+  z-index:1;
+}
+.Pasta-Cream-Sauce-content{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Pasta-Cream-Sauce-text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Pasta-Cream-Sauce-content h3{
+  font-size: 18px;
+  color: #54341a;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.Pasta-Cream-Sauce-content p {
+  font-size: 14px;
+  color: #958476;
+  line-height:28px;
+  font-weight: 300;
+  margin: 0;
+}
+.Pasta-Cream-Sauce-text-icon{
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.icon{
+  float: left;
+  width: 36px;
+  height: 30px;
+}
+.icon img{
+  width: 36px;
+  height: 30px;
+}
+/*--------------------shop--------------------*/
+.shop-content{
+  padding: 15px;
+}
+.formosa-text h1{
+  font-size: 70px;
+  color: #c5dc4d;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  line-height: 56px;
+}
+.formosa-block{
+  width:100%;
+  background-color: #c5dc4d;
+  height: 410px;
+  padding: 20px;
+}
+.formosa-line{
+  border: 4px solid #fff;
+  height: 370px;
+  width:100%;
+  padding: 10px 50px 10px 50px;
+  color: #fff;
+}
+.formosa-content h2{
+  color: #f9f6f4;
+  font-weight: 500;
+  font-size: 20px;
+}
+.formosa-content p{
+  color: #f9f6f4;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*--------------------footer--------------------*/
+footer{
+  height: 476px;
+  background-color: #413b36;
+}
+.padding{
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.padding-footer{
+  padding:0;
+  float: left;
+  height: 400px;
+  width: 100%;
+}
+footer .logo-footer{
+  height: 121px;
+  width: 132px;
+}
+footer .menu-footer{
+  float: none;
+}
+footer .menu-footer>li{
+  float: none;
+}
+footer .menu-footer>li >a{
+  display: block;
+  color: #f9f6f4;
+  padding: 24px 28px;
+}
+.block-footer{
+  background-color: #f9f6f4;
+  height: 2px;
+  width: 90%;
+  position: absolute;
+  left: 15px;
+  top: 320px;
+}
+.copyright{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.copyright p{
+  padding-left: 24px;
+  color: #f9f6f4;
+}
+}
