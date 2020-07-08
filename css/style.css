@@ -743,16 +743,20 @@ body{
 .navbar{
 	background-color: #fff;
 	box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.1);
-/*  position: fixed;
+  width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index:10;*/
+  z-index:5;
 }
 .navbar li a{
 	color: #ccc;
   font-weight:300;
 }
 /*--------------------banner--------------------*/
+.banner{
+  padding-top: 88px;
+}
 .banner-img{
     max-width: 100%;
     background: url(../images/banner2.jpg) no-repeat center center;
