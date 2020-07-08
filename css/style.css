@@ -1089,7 +1089,6 @@ footer .menu-footer>li >a{
 .formosa-block{
   background-color: #c5dc4d;
   height: 450px;
-  width:100%;
   padding: 20px;
 }
 .formosa-line{
@@ -1109,6 +1108,14 @@ footer .menu-footer>li >a{
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.googlemap{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.googlemap iframe{
+  height: 523px;
 }
 }
 @media (min-width: 992px) and  (max-width: 1199px){
@@ -1396,7 +1403,6 @@ footer .menu-footer>li >a{
 .formosa-block{
   background-color: #c5dc4d;
   height: 480px;
-  width:100%;
   padding: 20px;
 }
 .formosa-line{
@@ -1416,6 +1422,14 @@ footer .menu-footer>li >a{
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.googlemap{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.googlemap iframe{
+  height: 560px;
 }
 /*--------------------footer--------------------*/
 .block-footer{
@@ -1760,6 +1774,14 @@ footer .menu-footer>li >a{
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.googlemap{
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+}
+.googlemap iframe{
+  height: 460px;
 }
 /*--------------------footer--------------------*/
 .block-footer{
@@ -2327,6 +2349,10 @@ footer .menu-footer>li >a{
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.formosa-content a{
+  text-decoration: none;
+  color: #0074D9;
 }
 /*--------------------footer--------------------*/
 footer{
